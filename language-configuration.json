@@ -1,0 +1,26 @@
+{
+  "comments": { "lineComment": "#", "blockComment": ["#{", "}#"] },
+  "brackets": [
+    ["{", "}"],
+    ["[", "]"],
+    ["(", ")"]
+  ],
+  "autoClosingPairs": [
+    ["{", "}"],
+    ["[", "]"],
+    ["(", ")"],
+    { "open": "\"", "close": "\"", "notIn": ["string", "comment"] },
+    { "open": "`", "close": "`", "notIn": ["string", "comment"] },
+    { "open": "'", "close": "'", "notIn": ["string", "comment"] }
+  ],
+  "autoCloseBefore": ";:.,=}]) \n\t",
+  "surroundingPairs": [
+    ["{", "}"],
+    ["[", "]"],
+    ["(", ")"],
+    ["\"", "\""],
+    ["`", "`"],
+    ["'", "'"]
+  ],
+  "wordPattern": "(?:(?<![a-zA-Z0-9])[0-9](?:'?[0-9])*(?:\\.[0-9](?:'?[0-9])*)?(?:[eE][+\\-]?[0-9](?:'?[0-9])*)?(?![a-zA-Z0-9]))|(?:(?<![a-zA-Z0-9])0[dD][0-9](?:'?[0-9])*(?:\\.[0-9](?:'?[0-9])*)?(?:[eE][+\\-]?[0-9](?:'?[0-9])*)?(?![a-zA-Z0-9]))|(?:(?<![a-zA-Z0-9])0[xX][a-fA-F0-9](?:'?[a-fA-F0-9])*(?:\\.[a-fA-F0-9](?:'?[a-fA-F0-9])*)?(?:[pP][+\\-]?[0-9](?:'?[0-9])*)?(?![a-zA-Z0-9]))|(?:(?<![a-zA-Z0-9])0[oO][0-7](?:'?[0-7])*(?:\\.[0-7](?:'?[0-7])*)?(?:[pP][+\\-]?[0-9](?:'?[0-9])*)?(?![a-zA-Z0-9]))|(?:(?<![a-zA-Z0-9])0[bB][0-1](?:'?[0-1])*(?:\\.[0-1](?:'?[0-1])*)?(?:[pP][+\\-]?[0-9](?:'?[0-9])*)?(?![a-zA-Z0-9]))|(?:(?<![a-zA-Z0-9])(?:(?:(?:import|entrypoint|if|else|for|while|do|switch|case|default|fallthrough|break|continue|return|var|func|proc|interface|struct|enum|union|mutable|shared|volatile|alignas|threadlocal)_)|(?:[a-zA-Z][a-zA-Z0-9]*))(?![a-zA-Z0-9]))"
+}

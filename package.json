@@ -1,0 +1,50 @@
+{
+  "name": "thrice",
+  "displayName": "Thrice",
+  "description": "Language support for Thrice language.",
+  "version": "0.0.1",
+  "author": {
+    "email": "gecgelcem@outlook.com",
+    "name": "Cem Geçgel",
+    "url": "https://github.com/calestialgem"
+  },
+  "bugs": {
+    "url": "https://github.com/calestialgem/thrice.vscode/issues"
+  },
+  "homepage": "https://github.com/calestialgem/thrice.vscode",
+  "license": "GPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/calestialgem/thrice.vscode"
+  },
+  "engines": {
+    "vscode": "^1.73.0"
+  },
+  "publisher": "calestialgem",
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "thrice",
+        "aliases": [
+          "Thrice",
+          "thrice"
+        ],
+        "extensions": [
+          ".tr"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "thrice",
+        "scopeName": "source.tr",
+        "path": "./syntaxes/thrice.tmLanguage.json"
+      }
+    ]
+  },
+  "dependencies": {}
+}
